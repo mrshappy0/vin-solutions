@@ -1,4 +1,5 @@
 // Run sample tests with npm test -- "someTest" or just use npm run mocha
+// Run npm run docs to run markdown magic. This auto-generates a code snippet within the readme doc.
 
 let stringManipulation = (string = "") => {
 	// Skip regex loop if empty. Default is set to empty
