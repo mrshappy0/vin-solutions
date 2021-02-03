@@ -2,10 +2,24 @@
   "name": "vinsolutions",
   "version": "1.0.0",
   "description": "Code Challenge",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "test": "test"
+    "test": "bash -c 'mocha './test/**/*$0*.test.js''",
+    "clean": "rd /s /q build",
+    "mocha": "mocha"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrshappy0/vin-solutions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrshappy0/codewars/issues"
+  },
+  "homepage": "https://github.com/mrshappy0/vin-solutions#readme",
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
 }
