@@ -6,7 +6,8 @@
   "scripts": {
     "test": "bash -c 'mocha './test/**/*$0*.test.js''",
     "clean": "rd /s /q build",
-    "mocha": "mocha"
+    "mocha": "mocha",
+    "docs": "md-magic --path '**/*.md' --config ./config.file.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,5 +22,8 @@
   "devDependencies": {
     "chai": "*",
     "mocha": "*"
+  },
+  "dependencies": {
+    "markdown-magic": "^1.0.0"
   }
 }
