@@ -24,6 +24,7 @@
     "mocha": "*"
   },
   "dependencies": {
+    "esprima": "^4.0.1",
     "markdown-magic": "^1.0.0"
   }
 }
