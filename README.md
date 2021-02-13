@@ -40,7 +40,7 @@ let stringManipulation = (string = "") => {
   return strArr.join("");
 };
 
-console.log(stringManipulation("This is the waYyyy"));
+console.log("This is the waYyyy =>",stringManipulation("This is the waYyyy"));
 
 module.exports = {
   stringManipulation,
