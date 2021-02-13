@@ -1,7 +1,7 @@
 // Run sample tests with npm test -- "someTest" or just use npm run mocha
 // Run npm run docs to run markdown magic. This auto-generates a code snippet within the readme doc.
 
-let stringManipulation = (string = "", check= "Vowels") => {
+let stringManipulation = (string = "") => {
   // Seperate at non-letter char. i-flag for case-insensitive. Also keeps items matched by regex.
   // Filter removes empty (false-y) strings returned when seperating two non-letter characters.
   let strArr = string.split(/([^a-z])/i).filter((i) => i);
@@ -13,7 +13,7 @@ let stringManipulation = (string = "", check= "Vowels") => {
     // If word is too short, do nothing. e.g. 'it' => 'it' or "?" => "?"
     if (wordLength > 2) {
       let firstChar = word[0];
-      let midChars = new Set(word.slice(1, wordLength - 1).toLowerCase()).size;
+      let midChars = new Set(word.slice(1, wordLength - 1)).size;
       let endChar = word[wordLength - 1];
 
       // Replace mid-section with number of unqiue characters.
